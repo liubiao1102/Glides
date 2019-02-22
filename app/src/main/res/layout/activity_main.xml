@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/but"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/ig_view"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_time"
+        />
+    <com.kongzue.stacklabelview.StackLabel
+        android:layout_width="match_parent"
+        android:id="@+id/stack"
+        app:textColor="#e6000000"
+        app:itemMargin="4dp"
+        app:paddingHorizontal="12dp"
+        app:paddingVertical="8dp"
+        app:deleteButton="false"
+        app:textSize="12dp"
+        android:layout_height="200dp"></com.kongzue.stacklabelview.StackLabel>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycle_view"
+        android:visibility="gone"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
